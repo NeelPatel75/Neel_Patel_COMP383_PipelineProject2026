@@ -1,0 +1,21 @@
+# Snakemake internal data
+.snakemake/
+
+# Large data
+donor_data/
+ref/
+
+# Large output folders
+mapped/
+spades/
+blast_db/
+
+# Logs and System files
+nohup.out
+.DS_Store
+__pycache__/
+
+fasterq.tmp*
+reports/
+envs/
+fix_report_rule.py
