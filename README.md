@@ -32,8 +32,8 @@
 #### Copy and paste: 
     # In rule map_reads: 
     # For the test data 
-     r1 = "test_data/{sample}_1.fastq",
-     r2 = "test_data/{sample}_2.fastq",
+    r1 = "test_data/{sample}_1.fastq",
+    r2 = "test_data/{sample}_2.fastq",
     idx = "ref/HCMV_idx.1.bt2"
 #### Where it states:
     # # In rule map_reads: 
