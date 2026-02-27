@@ -48,7 +48,7 @@
      # Delete every result folder entirely
     rm -rf mapped/ spades/ ref/ reports/ blast_db/
      # Remove the old nohup records (optional) 
-     rm nohup.out
+    rm nohup.out
     # Delete the hidden snakemake history
     rm -rf .snakemake/
 #### Next, paste the following into the terminal for a dry run to ensure all of the jobs are downloaded. 
@@ -68,6 +68,13 @@
 ###### Note: if only running the test_data without nohup you will be able to see the changes live.
 #### Open and check the final file by pasting the following into the terminal 
     cat [pipeline_name]
+## Sources 
+#### https://ablab.github.io/spades/installation.html
+#### https://snakemake.readthedocs.io/en/master/tutorial/basics.html
+#### https://www.geeksforgeeks.org/python/python-lambda-anonymous-functions-filter-map-reduce/
+#### https://www.geeksforgeeks.org/python/python-sys-module/
+#### https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html
+
 
 
 
