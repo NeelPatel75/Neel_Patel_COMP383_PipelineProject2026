@@ -18,8 +18,8 @@
     conda activate pipeline_env
 
 #### 2. Next, clone the pipeline to the local environment using the following in the terminal. 
-    git clone [Your GitHub URL]
-    cd [Your Repo Name]
+    git clone [https://github.com/NeelPatel75/Neel_Patel_COMP383_PipelineProject2026.git]               (https://github.com/NeelPatel75/Neel_Patel_COMP383_PipelineProject2026.git)
+    cd Neel_Patel_COMP383_PipelineProject2026
 
 #### 3. There is test_data included so that the pipeline runs in a timely manner. 
 ###### Note: the user can change the name of the final file by editing the input and output in the Snakefile.  
