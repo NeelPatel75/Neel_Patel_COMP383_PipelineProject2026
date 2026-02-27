@@ -22,27 +22,7 @@
     cd [Your Repo Name]
 
 #### 3. There is test_data included so that the pipeline runs in a timely manner. 
-#### In the snakefile, make the following changes to use the test file for a faster run (<2 min)
-#### Copy and paste: 
-    # For the test data 
-    SAMPLES, = glob_wildcards("test_data/{sample}_1.fastq") 
-#### where it states:
-    # For the actual donor data
-    SAMPLES, = glob_wildcards("donor_data/{sample}_1.fastq")
-#### Copy and paste: 
-    # In rule map_reads: 
-    # For the test data 
-    r1 = "test_data/{sample}_1.fastq",
-    r2 = "test_data/{sample}_2.fastq",
-    idx = "ref/HCMV_idx.1.bt2"
-#### Where it states:
-    # # In rule map_reads: 
-    # For the actual donor data 
-    r1 = "donor_data/{sample}_1.fastq",
-    r2 = "donor_data/{sample}_2.fastq",
-    idx = "ref/HCMV_idx.1.bt2"
-###### Note: If you want to run the code using don_data rather than test_data, the above changes do not need to be made; both are included in the pipeline. 
-#### Additionally, the user can change the name of the final file by editing the input and output in the Snakefile.  
+###### Note: the user can change the name of the final file by editing the input and output in the Snakefile.  
 #### 4. Once the changes above have been made, it is time to run the pipeline 
 #### First, make sure all of the old files included in the pipeline are deleted so that snakmake starts fresh. To do so past the following in the terminal: 
      # Delete every result folder entirely
