@@ -30,16 +30,11 @@
 #### If it states a long list of jobs, then the pipeline is good to go. 
 #### Now run the following in the terminal to do an actual run.  
     snakemake --cores 1
-#### If conducting a longer run (not with this dataset), feel free to use the following 
-    nohup snakemake --cores 4 
-#### This will allow the user to close their laptop in case they have to leave, as the run could take a large amount of time. 
-#### To check the progress of the run, paste the following in the terminal 
-    tail -f nohup.out
+###### Note: Updates will be shown in the terminal.
 #### Once the pipeline is complete, there will be a message at the bottom after running the above code stating: 
     Finished job 0.
     n of n steps (100%) done
     Complete log: .snakemake/log/---------------.snakemake.log 
-###### Note: if running with the data from test_data, there is no need for nohup, and updates will be shown in the terminal.
 #### Open and check the final file by pasting the following into the terminal 
     cat PipelineReport.txt
 ## Sources 
