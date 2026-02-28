@@ -43,6 +43,7 @@
 #### https://www.geeksforgeeks.org/python/python-lambda-anonymous-functions-filter-map-reduce/
 #### https://www.geeksforgeeks.org/python/python-sys-module/
 #### https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html
+#### Other resources include slides from the COMP 383 Comp Bio class. 
 
 
 
