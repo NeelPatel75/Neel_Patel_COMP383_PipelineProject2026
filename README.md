@@ -19,7 +19,7 @@
     conda activate pipeline_env 
 #### Then copy this to the terminal, install all of the necessary packages and programs. 
     conda install -c bioconda -c conda-forge snakemake bowtie2 spades blast biopython ncbi-datasets-cli -y
-###### Note: the user can change the name of the final file by editing the input and output in the Snakefile ( Not necessary).  
+###### Note: the user can change the name of the final file from PipelineReport.txt by editing the input and output in the Snakefile ( Not necessary).  
 #### 3. Once the environment is set up, it is time to run the pipeline 
 #### First, make sure all of the old files created in the pipeline are deleted so that snakmake starts fresh. To do so paste the following in the terminal:  
     rm -rf mapped/ spades/ ref/ reports/ blast_db/ 
