@@ -10,21 +10,18 @@
 #### 4. Local BLAST identification against the Betaherpesvirinae subfamily.
 
 ## Instructions on how to run the code: 
-#### 1. The following tools are required to run the pipeline:
-#### Copy and paste the following in the terminal.  
-    conda create -n pipeline_env -c bioconda -c conda-forge \
-    snakemake bowtie2 spades blast-plus biopython datasets -y 
-#### Activate the environment by pasting the following into the terminal.
-    conda activate pipeline_env
-
-#### 2. Next, clone the pipeline to the local environment using the following in the terminal. 
+#### First, clone the pipeline to the local environment using the following in the terminal. 
     git clone https://github.com/NeelPatel75/Neel_Patel_COMP383_PipelineProject2026.git
     cd Neel_Patel_COMP383_PipelineProject2026
-
-#### 3. There is test_data included so that the pipeline runs in a timely manner. 
-###### Note: the user can change the name of the final file by editing the input and output in the Snakefile.  
-#### 4. Once the changes above have been made, it is time to run the pipeline 
-#### First, make sure all of the old files created in the pipeline are deleted so that snakmake starts fresh. To do so past the following in the terminal:  
+#### Then install the following tools required to run the pipeline:
+#### Copy and paste the following in the terminal to create a conda environment. 
+    conda create -n pipeline_env -y
+    conda activate pipeline_env 
+#### Then copy this to the terminal, install all of the necessary packages and programs. 
+    conda install -c bioconda -c conda-forge snakemake bowtie2 spades blast biopython ncbi-datasets-cli -y
+###### Note: the user can change the name of the final file by editing the input and output in the Snakefile ( Not necessary).  
+#### 3. Once the environment is set up, it is time to run the pipeline 
+#### First, make sure all of the old files created in the pipeline are deleted so that snakmake starts fresh. To do so paste the following in the terminal:  
     rm -rf mapped/ spades/ ref/ reports/ blast_db/ 
     rm nohup.out
     rm -rf .snakemake/
@@ -32,8 +29,8 @@
     snakemake -n
 #### If it states a long list of jobs, then the pipeline is good to go. 
 #### Now run the following in the terminal to do an actual run.  
-    snakemake --cores 4
-#### If conducting a longer run, feel free to use 
+    snakemake --cores 1
+#### If conducting a longer run (not with this dataset), feel free to use the following 
     nohup snakemake --cores 4 
 #### This will allow the user to close their laptop in case they have to leave, as the run could take a large amount of time. 
 #### To check the progress of the run, paste the following in the terminal 
@@ -42,9 +39,9 @@
     Finished job 0.
     n of n steps (100%) done
     Complete log: .snakemake/log/---------------.snakemake.log 
-###### Note: if only running the test_data without nohup you will be able to see the changes live.
+###### Note: if running with the data from test_data, there is no need for nohup, and updates will be shown in the terminal.
 #### Open and check the final file by pasting the following into the terminal 
-    cat [pipeline_name]
+    cat PipelineReport.txt
 ## Sources 
 #### https://ablab.github.io/spades/installation.html
 #### https://snakemake.readthedocs.io/en/master/tutorial/basics.html
