@@ -24,12 +24,9 @@
 #### 3. There is test_data included so that the pipeline runs in a timely manner. 
 ###### Note: the user can change the name of the final file by editing the input and output in the Snakefile.  
 #### 4. Once the changes above have been made, it is time to run the pipeline 
-#### First, make sure all of the old files included in the pipeline are deleted so that snakmake starts fresh. To do so past the following in the terminal: 
-     # Delete every result folder entirely
-    rm -rf mapped/ spades/ ref/ reports/ blast_db/
-     # Remove the old nohup records (optional) 
+#### First, make sure all of the old files created in the pipeline are deleted so that snakmake starts fresh. To do so past the following in the terminal:  
+    rm -rf mapped/ spades/ ref/ reports/ blast_db/ 
     rm nohup.out
-    # Delete the hidden snakemake history
     rm -rf .snakemake/
 #### Next, paste the following into the terminal for a dry run to ensure all of the jobs are downloaded. 
     snakemake -n
